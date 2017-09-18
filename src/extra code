@@ -1,0 +1,138 @@
+import java.util.Arrays;
+
+
+
+
+System.out.println();
+        System.out.println("Enter in a Byte, Short, Integer, Long, Float, Double, Character," +
+                " and Boolean.");
+
+        Object[] input = new Object[8];
+        input[0] = keyboard.nextByte();
+        //input[0] = JOptionPane.showInputDialog("Enter a Byte:");
+        input[1] = keyboard.nextShort();
+        //input[1] = JOptionPane.showInputDialog("Enter a Short:");
+        input[2] = keyboard.nextInt();
+        //input[2] = JOptionPane.showInputDialog("Enter a Integer:");
+        input[3] = keyboard.nextLong();
+        //input[3] = JOptionPane.showInputDialog("Enter a Long:");
+        input[4] = keyboard.nextFloat();
+        //input[4] = JOptionPane.showInputDialog("Enter a Float:");
+        input[5] = keyboard.nextDouble();
+        //input[5] = JOptionPane.showInputDialog("Enter a Double:");
+        input[6] = keyboard.next();
+        //input[6] = JOptionPane.showInputDialog("Enter a Character:");
+        input[7] = keyboard.nextBoolean();
+        //input[7] = JOptionPane.showInputDialog("Enter a Boolean");
+
+        /*
+        System.out.println();
+        System.out.println("You entered:");
+        printArray(input);
+        */
+
+        String jinput = Arrays.toString(input);
+        JOptionPane.showMessageDialog(null, jinput);
+
+
+        System.exit(0);
+        keyboard.close();
+
+
+        //JOptionPane.showMessageDialog(null, "");
+
+    }
+}
+/*
+        String enterByte;
+        String enterShort;
+        String enterInt;
+        String enterLong;
+        String enterFloat;
+        String enterDouble;
+        String enterChar;
+        String enterBoolean;
+
+
+
+    "You entered: " +
+                input[0] + ", " + input[1] + ", " + input[2] + "," + input[3] + ", " + input[4] +
+        ", " + input[5] + ", " + input[6] + ", " + input[7]);
+
+        //Integer convertToBinary = new Integer(name);
+        Integer decB = (int) B;
+        Integer dec_r = (int) r;
+        Integer dec_a = (int) a;
+        Integer dec_d = (int) d;
+        Integer dec_y = (int) y;
+
+        int[] decName = new int[5];
+        decName[0] = (int) name[0];
+        decName[1] = (int) name[1];
+        decName[2] = (int) name[2];
+        decName[3] = (int) name[3];
+        decName[4] = (int) name[4];
+
+        Scanner convertBinary = new Scanner(EchoJPane);
+        Integer secondLetter = new Integer(dec_r);
+        Integer thirdLetter = new Integer(dec_a);
+        Integer fourthLetter = new Integer(dec_d);
+        Integer fifthLetter = new Integer(dec_y);
+
+        //System.out.println(" ");
+        */
+
+
+
+
+
+
+
+
+        System.out.println();
+                System.out.println("Enter a Byte:");
+                byte byt = keyboard.nextByte();
+
+                System.out.println("Enter a Short:");
+                short shor = keyboard.nextShort();
+
+                System.out.println("Enter an Integer:");
+                int integer = keyboard.nextInt();
+
+                System.out.println("Enter a Long:");
+                long lon = keyboard.nextLong();
+
+                System.out.println("Enter a Float:");
+                float flo = keyboard.nextFloat();
+
+                System.out.println("Enter a Double:");
+                double dub = keyboard.nextDouble();
+
+                System.out.println("Enter a Character:");
+                char character = keyboard.next().charAt(0);
+
+                System.out.println("Enter a Boolean");
+                boolean boo = keyboard.nextBoolean();
+
+                JOptionPane.showMessageDialog(null, "You entered: " +
+                byt + ", " + shor + ", " + integer + ", " + lon + ", " + flo + ", " + dub +
+                ", " + character + ", " + boo);
+
+
+
+
+                /*
+                    private static void printArray(Object[] anArray)
+                    {
+                        for (int i = 0; i < anArray.length; i++)
+                        {
+                            if (i > 0)
+                            {
+                                JOptionPane.showMessageDialog(null, ", ");
+                            }
+                            JOptionPane.showMessageDialog(null, anArray[i]);
+                        }
+                    }
+                */
+
+                //printArray(input);
